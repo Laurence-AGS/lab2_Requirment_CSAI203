@@ -3,10 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
     <title>CSAI203_lab_Requirment</title>
 </head>
 <body>
-    
+    <form method="POST">
+        <h2>Enter your name</h2>
+        <input type="text" name="student's name" placeholder="Enter your name" class="input-field">
+        
+        <h2>Enter your birth date</h2>
+        <input type="date" name="birth date" placeholder="Enter mm/dd/yyyy" class="input-field"><br><br>
+
+        <button type="submit" class="button">Submit</button>
+    </form>
 </body>
 </html>
